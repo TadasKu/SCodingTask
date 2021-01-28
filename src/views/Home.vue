@@ -9,7 +9,7 @@
       border-variant="secondary"
     >
     <b-card-title>Click button to open an "Open Issues" page!</b-card-title>
-      <b-button to="/issues/opened" class="open-button">Open</b-button>
+      <b-button to="/issues/open" class="open-button">Open</b-button>
     </b-card>
     </b-container>
   </div>
@@ -35,10 +35,17 @@ export default {
   margin-top: 3rem;
 }
 .open-button {
+  margin-top: 1.5rem;
+  width: 20%;
   background-color: #df4a16;
 }
 .open-button:hover {
   background-color: #b34219;
+}
+@media only screen and (max-width: 400px) {
+.open-button {
+  width: 5rem;
+}
 }
 @media only screen and (max-width: 325px) {
 .card-title{
@@ -48,6 +55,9 @@ export default {
 @media only screen and (max-width: 198px) {
 .home-container{
   height: 20rem;
+}
+.open-button {
+  margin-top: 0rem;
 }
 }
 </style>

@@ -11,7 +11,7 @@
             <b-navbar-nav class="mx-auto">
               <b-container  >
                 <b-nav-item id="home" to="/" >Home</b-nav-item>
-                <b-nav-item to="/issues/opened" custom>Open</b-nav-item>
+                <b-nav-item to="/issues/open" custom>Open</b-nav-item>
                 <b-nav-item to="/issues/done">Done</b-nav-item>
                 <b-nav-item to="/issues/trashed">Trash</b-nav-item>
                 </b-container>
