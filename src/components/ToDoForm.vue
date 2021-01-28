@@ -20,7 +20,8 @@
     >
     </b-form-textarea>
     <b-button @click="AddIssue" class="send-button shadow-none">Add</b-button>
-      </b-card></b-form>
+      </b-card>
+    </b-form>
     </b-container>
   </div>
 </template>
