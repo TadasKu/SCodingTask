@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
       <b-container>
-        <b-navbar toggleable="sm" type="dark" variant="dark" align="center" class="navBar">
+        <b-navbar toggleable="sm" type="dark" variant="dark" align="center" class="nav-bar">
           <b-navbar-brand class="d-block d-sm-none" >ToDo</b-navbar-brand>
           <b-navbar-toggle
             target="nav-collapse"
@@ -9,8 +9,8 @@
           </b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav class="mx-auto">
-              <b-container >
-                <b-nav-item to="/" >Home</b-nav-item>
+              <b-container  >
+                <b-nav-item id="home" to="/" >Home</b-nav-item>
                 <b-nav-item to="/issues/opened" custom>Open</b-nav-item>
                 <b-nav-item to="/issues/done">Done</b-nav-item>
                 <b-nav-item to="/issues/trashed">Trash</b-nav-item>
@@ -28,7 +28,10 @@
   color: #fff;
   margin-left: 2em;
 }
-.navBar{
+#home a{
+  margin-left: 0;
+}
+.nav-bar{
   border: 1px solid;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
