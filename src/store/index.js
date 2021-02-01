@@ -8,13 +8,25 @@ export default new Vuex.Store({
     issues: []
   },
   mutations: {
-    add_issue (state, newIssue) {
+    AddIssue (state, newIssue) {
       state.issues.push(newIssue)
+    },
+    ChangeIssue(state, issue){
+      state.issues[issue.index]= issue
     }
   },
   actions: {
-    add_issueAction (context, newIssue) {
-      context.commit('add_issue', newIssue)
+    AddIssueAction (context, newIssue) {
+      context.commit('AddIssue', newIssue)
+    },
+    ChangeIssueStatusAction (context, issue) {
+      context.commit('ChangeIssue', issue)
+    },
+    ChangeTrashStatusAction(context, issue) {
+      context.commit('ChangeIssue', issue)
+    },
+    ChangeIssueAction(context, issue) {
+      context.commit('ChangeIssue', issue)
     }
   },
   modules: {
