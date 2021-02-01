@@ -1,13 +1,13 @@
 <template>
   <div id="footer">
     <b-container class="fixed-bottom">
-        <label>SCodingas Task</label>
+      <label>SCodingas Task</label>
     </b-container>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 <style scoped>
 label {
