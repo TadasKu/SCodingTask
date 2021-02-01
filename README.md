@@ -1,4 +1,4 @@
-# SCodingTask
+# ScodingTask
 
  ## Technology stack
 
@@ -30,7 +30,7 @@ Used technologies:
     * Done issues can be marked as “not done”.
     * Open issues can be marked as “done”.
     * Issues can be restored (marked as “not trash”).
-    * Issue descriptions are editable
+    * Issue descriptions are editable.
     
 Application must have navbar:
   * Navbar must contain links to all pages of the application and current page link must be
