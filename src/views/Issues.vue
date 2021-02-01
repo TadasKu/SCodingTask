@@ -121,19 +121,21 @@ export default {
   },
   methods: {
     GetIssues() {
-      if (this.$route.params.status !== "trashed") {
-        this.issues = this.$store.state.issues.filter(
-          (el) =>
-            el.status === this.$route.params.status && el.isTrashed === false
-        );
-      } else {
-        this.issues = this.$store.state.issues.filter(
-          (el) => el.isTrashed === true
-        );
+      if (this.$store != null) {
+        if (this.$route.params.status !== "trashed") {
+          this.issues = this.$store.state.issues.filter(
+            (el) =>
+              el.status === this.$route.params.status && el.isTrashed === false
+          );
+        } else {
+          this.issues = this.$store.state.issues.filter(
+            (el) => el.isTrashed === true
+          );
+        }
+        this.issues.sort(function (a, b) {
+          return new Date(b.date) - new Date(a.date);
+        });
       }
-      this.issues.sort(function (a, b) {
-        return new Date(b.date) - new Date(a.date);
-      });
     },
     ChangeStatus(issue) {
       if (issue.isTrashed === false) {
